@@ -1,0 +1,30 @@
+//
+.navigation {
+    display: grid;
+    grid-template-areas: "logo nav"
+        "items items";
+    grid-template-columns: 1fr 1fr;
+
+    .options {
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .nav-links {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    .itemsContainer {
+        grid-area: items;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
